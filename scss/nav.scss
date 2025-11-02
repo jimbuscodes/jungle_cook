@@ -1,24 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 16px;
-}
-
 header {
   padding: 0 20px;
   height: 50px;
@@ -71,7 +50,6 @@ ul li:hover {
 #login {
   color: #000;
 }
-
 #signup {
   border: 1px solid cornflowerblue;
   color: cornflowerblue;
@@ -135,51 +113,8 @@ ul li:hover {
   header nav {
     display: none;
   }
+
   #hamburger-icon {
     display: block;
   }
-}
-.home-wrapper {
-  height: calc(100vh - 50px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.circle-wrapper {
-  position: relative;
-  width: 435px;
-  height: 435px;
-}
-
-.big-circle {
-  position: absolute;
-  bottom: 0;
-  width: 387px;
-  height: 387px;
-  border-radius: 50%;
-  background-color: #ffd972;
-  overflow: hidden;
-  box-shadow: 0px 15px 20px 10px #888888;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  color: #fff;
-}
-
-.small-circle {
-  position: absolute;
-  right: 0;
-  width: 168px;
-  height: 168px;
-  border-radius: 50%;
-  background-color: #fcbcb8;
-  overflow: hidden;
-  box-shadow: 0px 15px 20px 10px #888888;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  color: #fff;
 }
