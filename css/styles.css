@@ -227,3 +227,7 @@ ul li:hover {
   font-family: caveatReg;
   src: url("../fonts/Lato/fonts_export/Caveat-Regular.ttf");
 }
+footer {
+  position: fixed;
+  bottom: 0;
+}
