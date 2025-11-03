@@ -228,6 +228,29 @@ ul li:hover {
   src: url("../fonts/Lato/fonts_export/Caveat-Regular.ttf");
 }
 footer {
+  width: 100%;
   position: fixed;
   bottom: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copyRight {
+  color: #000;
+  font-family: latoItalic;
+  font-size: 15px;
+  margin-left: 30px;
+}
+footer .links a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+  font-family: latoItalic;
+  font-size: 15px;
+}
+footer img {
+  width: 19px;
+  height: 19px;
+  margin-right: 30px;
 }
