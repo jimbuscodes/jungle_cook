@@ -49,6 +49,8 @@ ul {
 
 ul a {
   color: #000;
+  font-family: caveatReg;
+  font-size: 25px;
 }
 
 ul li {
@@ -220,4 +222,8 @@ ul li:hover {
 @font-face {
   font-family: caveatBold;
   src: url("../fonts/Lato/fonts_export/Caveat-Bold.ttf");
+}
+@font-face {
+  font-family: caveatReg;
+  src: url("../fonts/Lato/fonts_export/Caveat-Regular.ttf");
 }
