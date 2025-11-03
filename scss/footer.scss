@@ -30,3 +30,29 @@ footer {
     margin-right: 30px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  footer {
+    display: grid;
+    grid-template-areas:
+      "copyRight socials"
+      "links links";
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .copyRight {
+    grid-area: copyRight;
+    justify-self: end;
+  }
+
+  .socials {
+    grid-area: socials;
+    justify-self: start;
+  }
+
+  .links {
+    grid-area: links;
+  }
+}

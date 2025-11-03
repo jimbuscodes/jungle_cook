@@ -226,6 +226,10 @@ ul li:hover {
   src: url("../fonts/Lato/Lato-Regular.ttf");
 }
 @font-face {
+  font-family: latoBlk;
+  src: url("../fonts/Lato/Lato-Black.ttf");
+}
+@font-face {
   font-family: caveatBold;
   src: url("../fonts/Lato/fonts_export/Caveat-Bold.ttf");
 }
@@ -261,8 +265,163 @@ footer img {
   margin-right: 30px;
 }
 
+@media only screen and (max-width: 900px) {
+  footer {
+    display: grid;
+    grid-template-areas: "copyRight socials" "links links";
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .copyRight {
+    grid-area: copyRight;
+    justify-self: end;
+  }
+  .socials {
+    grid-area: socials;
+    justify-self: start;
+  }
+  .links {
+    grid-area: links;
+  }
+}
 .login-page-wrapper {
   width: 100%;
   height: 100%;
   background-color: #ffd972;
+}
+.login-page-wrapper .login-signup-wrapper {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-page-wrapper .login-signup-wrapper .login-wrapper {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: 300px;
+}
+.login-page-wrapper .login-signup-wrapper .login-wrapper h1 {
+  font-family: latoBlk;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+  margin-left: -30px;
+}
+.login-page-wrapper .login-signup-wrapper .login-wrapper input {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  background-color: #ffd972;
+  margin-bottom: 40px;
+  width: 207px;
+}
+.login-page-wrapper .login-signup-wrapper .login-wrapper ::placeholder {
+  color: #000;
+  opacity: 1;
+  font-family: latoReg;
+  font-size: 12px;
+}
+.login-page-wrapper .login-signup-wrapper .login-wrapper .login-btn {
+  width: 209px;
+  height: 52px;
+  box-shadow: 5px 5px 10px #888888;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  border-radius: 30px;
+}
+.login-page-wrapper .login-signup-wrapper .login-wrapper .login-btn p {
+  font-family: caveatReg;
+  font-size: 25px;
+}
+.login-page-wrapper .login-signup-wrapper .signup-wrapper {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+.login-page-wrapper .login-signup-wrapper .signup-wrapper p {
+  font-family: latoItalic;
+  font-size: 12px;
+  text-align: left;
+  margin-left: -135px;
+  margin-bottom: -3px;
+}
+.login-page-wrapper .login-signup-wrapper .signup-wrapper h1 {
+  font-family: latoBlk;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+  margin-left: -130px;
+}
+.login-page-wrapper .login-signup-wrapper .signup-wrapper input {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  background-color: #ffd972;
+  margin-bottom: 40px;
+  width: 250px;
+}
+.login-page-wrapper .login-signup-wrapper .signup-wrapper ::placeholder {
+  color: #000;
+  opacity: 1;
+  font-family: latoReg;
+  font-size: 12px;
+}
+.login-page-wrapper .login-signup-wrapper .signup-wrapper .signup-btn {
+  width: 250px;
+  height: 52px;
+  box-shadow: 5px 5px 10px #888888;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.login-page-wrapper .login-signup-wrapper .signup-wrapper .signup-btn p {
+  font-family: caveatReg;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .login-page-wrapper {
+    width: 100%;
+    height: fit-content;
+  }
+  .login-page-wrapper .login-signup-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  .login-page-wrapper .login-signup-wrapper .login-wrapper {
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .login-page-wrapper .login-signup-wrapper .signup-wrapper {
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+  .login-page-wrapper .login-signup-wrapper footer {
+    padding-top: 50px;
+  }
 }
